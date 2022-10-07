@@ -31,7 +31,7 @@ Sub Ticker()
     
     'loop through all of the ticker data by date
     For i = 2 To 22771
-               
+                     
         'check if we are within the same ticker, if it is not
         If Cells(i + 1, 1).Value <> Cells(i, 1).Value Then
             
@@ -39,7 +39,7 @@ Sub Ticker()
             Ticker = Cells(i, 1).Value
             
             'set the opening price. each ticker has 250 days of data. this will grab the first day.
-            openprice = Cells(i - 249, 3).Value
+            openprice = Cells(i - 250, 3).Value
             
             'set the closing price
             closeprice = Cells(i, 6).Value
